@@ -1,0 +1,21 @@
+useDynLib(ImbTreeAUC, .registration=TRUE)
+export(
+	ImbTreeAUC,
+	ImbTreeAUCInter,
+	ExtractRules,
+	PredictTree,
+	PrintTree,
+	PrintTreeInter,
+	runShinyImbTreeAUC
+)
+
+importFrom(Rcpp, evalCpp)
+import(BBmisc)
+import(GenSA)
+import(data.tree)
+import(snow)
+import(utils)
+import(caret)
+import(shiny)
+import(RWeka)
+import(stats)
